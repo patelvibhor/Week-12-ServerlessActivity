@@ -1,0 +1,70 @@
+/* Global background + typography */
+html, body, [class*="css"] {
+  font-size: 16px !important;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff 0%, #fdf2f8 50%, #ecfeff 100%);
+}
+
+/* Card look for main content */
+.block-container {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+  background: #f9fafb;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* Title / headings */
+h1, h2, h3, h4 {
+  color: #111827;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+/* Metrics */
+.stMetric label {
+  font-size: 16px !important;
+  color: #6b7280;
+}
+
+.stMetric span {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.stTabs [data-baseweb="tab"] {
+  font-size: 16px !important;
+  padding: 0.5rem 1.25rem;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+  border-bottom: 3px solid #ec4899;
+  color: #ec4899 !important;
+  font-weight: 700;
+}
+
+/* Sliders */
+[data-baseweb="slider"] {
+  color: #ec4899;
+}
+
+/* Dataframe header tweak */
+[data-testid="stDataFrame"] table thead tr th {
+  background-color: #f9fafb;
+}
